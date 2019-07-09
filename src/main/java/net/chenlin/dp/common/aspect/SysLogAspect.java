@@ -32,7 +32,7 @@ public class SysLogAspect {
 	
 	@Pointcut("@annotation(net.chenlin.dp.common.annotation.SysLog)")
 	public void logPointCut() { 
-		
+		System.out.println("hello23");
 	}
 
 	@Around("logPointCut()")
